@@ -1,0 +1,167 @@
+@font-face {font-family: "SF Pro Display"; src: url("//db.onlinewebfonts.com/t/64a2cfb57c4a5df1013e4f2e5bf3eff3.eot"); src: url("//db.onlinewebfonts.com/t/64a2cfb57c4a5df1013e4f2e5bf3eff3.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/64a2cfb57c4a5df1013e4f2e5bf3eff3.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/64a2cfb57c4a5df1013e4f2e5bf3eff3.woff") format("woff"), url("//db.onlinewebfonts.com/t/64a2cfb57c4a5df1013e4f2e5bf3eff3.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/64a2cfb57c4a5df1013e4f2e5bf3eff3.svg#SF Pro Display") format("svg"); }
+
+html *
+{
+    font-family: "SF Pro Display", serif !important;
+}
+
+main {
+    background-color: #f7f7f7;
+}
+
+.main-wrapper {
+    max-width: 1352px;
+    margin: 0 auto;
+
+    display: flex;
+    padding: 60px 40px;
+}
+
+nav {
+    background-color: white;
+    border-bottom: solid 1px #c9d0d7;
+}
+
+.nav-wrapper {
+    max-width: 1352px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+
+}
+
+.nav-logo-wrapper {
+    flex: 1;
+}
+
+.nav-item {
+    position: relative;
+
+    font-size: 19px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    text-align: left;
+    color: #8f95a3;
+
+    margin-left: 30px;
+
+    cursor: pointer;
+}
+
+.login-arrow {
+    position: absolute;
+    top: 50%;
+
+    display: inline-block;
+    margin-left: 10px;
+
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #8f95a3;
+}
+
+.nav-item.selected {
+    color: #009aeb;
+}
+
+.book-cover-wrapper {
+    -webkit-box-shadow: 3px 9px 8px -2px rgba(0,0,0,0.28);
+    box-shadow: 3px 9px 8px -2px rgba(0,0,0,0.28);
+}
+
+.book-meta-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 85px;
+}
+
+.book-meta-title {
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+.book-meta-category {
+    margin-top: 16px;
+
+    font-size: 23px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+.book-meta-authors {
+    margin-top: 20px;
+
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.78;
+    letter-spacing: normal;
+    text-align: left;
+    color: #8f95a3;
+}
+
+.book-meta-toolbox-wrapper {
+    display: flex;
+    align-items: center;
+
+    margin-top: 40px;
+    padding: 10px 0;
+    border-top: solid 1px rgba(92, 98, 110, 0.1);
+    border-bottom: solid 1px rgba(92, 98, 110, 0.1);
+}
+
+.book-meta-toolbox-text {
+    margin-left: 10px;
+    margin-right: 40px;
+
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: normal;
+    text-align: left;
+    color: #3a4649;
+
+    cursor: pointer;
+}
+
+.book-meta-tags-wrapper {
+    display: flex;
+    align-items: center;
+
+    margin-top: 35px;
+}
+
+.book-meta-tag {
+    color: white;
+
+    padding: 7px 16px;
+    border-radius: 6px;
+    background-color: #8f95a3;
+
+    cursor: pointer;
+}
+
+.book-meta-tag:not(:first-child) {
+    margin-left: 7px;
+}
